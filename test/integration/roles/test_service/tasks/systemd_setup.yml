@@ -10,3 +10,5 @@
     - "install_systemd_result.mode == '0644'"
     - "install_systemd_result.md5sum == 'f634df77d9160ab05bad4ed49d82a0d0'"
 
+- name: install the print_on_exit unit file
+  copy: src=print_on_exit.systemd dest=/usr/lib/systemd/system/print_on_exit.service

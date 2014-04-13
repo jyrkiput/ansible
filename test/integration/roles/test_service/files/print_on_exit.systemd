@@ -1,0 +1,8 @@
+[Unit]
+Description=Prints on exit
+
+[Service]
+Type=oneshot
+RemainAfterExit=Yes
+ExecStart=/usr/bin/echo start
+ExecStop=/usr/bin/echo stop
